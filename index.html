@@ -21,13 +21,31 @@
       margin: auto;
       margin-top: 30px;
     }
+    .iki {
+      display: flex;
+    }
+    .iki .warna{
+      color: green;
+      margin-left: 5px;
+    }
+    .img2 {
+      width: 700px;
+    }
   </style>
 </head>
 
 <body>
   <div id="main">
     <h1>Current Trends in Deep Learning</h1>
-    <p><i>Co-written by: Eirik Folkestad, Manu Gopinathan & Øyvind Nygard</i></p>
+    <div class="iki">
+      <p>
+        <i>Co-written by:</i>
+      </p>  
+        <p class="warna">
+          <i>Folkestad, Manu Gopinathan & Øyvind Nygard</i>
+        </p>
+    </div>
+
     <p>In the last decade, the area of artificial intelligence (AI) has exploded with
         interesting and promising results. With major achievements in image recognition,
         speech recognition and highly complex games, AI continues to disrupt society.
@@ -94,7 +112,7 @@
         Another big topic in the future of AI is optimization of deep learning and how to make deep neural networks more robust. A known example of how fragile neural networks can be, 
         is this adversarial demonstration from <U>Explaining and Harvesting Adversarial Examples</U>:
     </p>
-    <img src="img2.webp" alt="">
+    <img src="img2.webp" class="img2">
     <p>
       In this example the network can detect the panda in the image to the left. Now, if you alter that picture by adding a toned down image of noise with gibbon-like features, 
       the network will classify the image as a gibbon. However, to the human eye the picture has not been altered at all.
